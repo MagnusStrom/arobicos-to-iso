@@ -53,7 +53,7 @@ rm -rf "$APPDIR/$APPNAME.iso"
 rm -rf "$DIR/extract"
 rm -rf "$DIR/iso_src/"
 # Package app thanks to electron-packager
-electron-packager $1 --platform=linux --arch=ia32 electron-iso
+/opt/hostedtoolcache/node/14.17.3/x64/lib/node_modules/electron-packager/bin/electron-packager.js $1 --platform=linux --arch=ia32 electron-iso
 cp "$DIR/iso_scripts/autostart.sh" ./electron-iso-linux-ia32
 echo "
 2/5    -> Executing postscript (if specified)...
