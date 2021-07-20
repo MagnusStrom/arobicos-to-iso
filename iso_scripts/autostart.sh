@@ -12,4 +12,6 @@ hsetroot -add "#000000" -add "#000000" -gradient 0 -center /usr/local/share/pixm
 [ -d "/usr/local/etc/X.d" ] && find "/usr/local/etc/X.d" -type f -o -type l -print | while read F; do . "$F"; done
 [ -d "$HOME/.X.d" ] && find "$HOME/.X.d" -type f -print | while read F; do . "$F"; done
 
-wmctrl -r ':ACTIVE:' -b toggle,fullscreen
+FILE="~/.config/openbox/rc.xml"
+echo "*** File - $FILE contents ***"
+cat $FILE
