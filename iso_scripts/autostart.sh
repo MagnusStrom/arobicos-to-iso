@@ -3,6 +3,7 @@
 # Autostart electron-app
 /home/tc/electron-iso-linux-ia32/electron-iso --no-sandbox --use-gl=swiftshader &
 
+mkdir files
 # Default tinycore desktop .xsession
 "$DESKTOP" 2>/tmp/wm_errors &
 export WM_PID=$!
