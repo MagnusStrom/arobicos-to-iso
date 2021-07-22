@@ -4,6 +4,10 @@
 /home/tc/electron-iso-linux-ia32/electron-iso --no-sandbox --use-gl=swiftshader &
 
 mkdir files
+cd files
+echo 'Welcome to ArobicOS! Enjoy your stay~' > welcome.txt
+
+cd -
 # Default tinycore desktop .xsession
 "$DESKTOP" 2>/tmp/wm_errors &
 export WM_PID=$!
