@@ -44,7 +44,7 @@ KIOSKDIR="$DIR/extract/home/tc"  # Subdir
 ISO_FILE="$DIR/core.iso"         # Iso file
 CURRENTDIR=$PWD                  # Current path
 
-echo "Running electron-iso-packager"
+echo "Running arobicOS packager. everything seems OKAY!"
 echo "1/5    -> Preparing build...
 "
 # Clear (if something has gone wrong previously)
